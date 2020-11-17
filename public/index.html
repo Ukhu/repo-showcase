@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Github Profile Page</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+</head>
+<body>
+  <header class="header-content">
+    <div>
+      <i class="fab fa-github logo"></i>
+    </div>
+    <div class="header__center">
+      <label for="general-search">
+        <input 
+          id="general-search"
+          placeholder="Search or jump to...">
+        <div>
+          <i class="fas fa-slash"></i>
+        </div>
+      </label>
+      <nav>
+        <ul>
+          <li>Pull requests</li>
+          <li>Issues</li>
+          <li>Marketplace</li>
+          <li>Explore</li>
+        </ul>
+      </nav>
+    </div>
+    <div>
+      <ul class="utils">
+        <li><i class="far fa-bell"></i></li>
+        <li><i class="fas fa-plus"></i></li>
+        <li>
+          <img class="avatar-tiny" 
+            src="https://avatars1.githubusercontent.com/u/35268825?s=60&v=4"
+            alt="Account owner small"
+            width="20px"
+            height="20px">
+        </li>
+      </ul>
+    </div>
+  </header>
+  <header class="header-mobile">
+    <div class="header-mobile-top">
+      <i class="fas fa-bars menu"></i>
+      <div>
+        <i class="fab fa-github logo"></i>
+      </div>
+      <i class="far fa-bell notification"></i>
+    </div>
+    <div class="header__center">
+      <label for="general-search-mobile">
+        <input 
+          id="general-search-mobile"
+          placeholder="Search or jump to...">
+        <div>
+          <i class="fas fa-slash"></i>
+        </div>
+      </label>
+      <nav>
+        <ul role="menu">
+          <li role="menuitem">Dashboard</li>
+          <li role="menuitem">Pull requests</li>
+          <li role="menuitem">Issues</li>
+          <li role="menuitem">Marketplace</li>
+          <li role="menuitem">Explore</li>
+          <li role="menuitem" class="menu-username">
+            <img class="avatar-tiny" 
+            src="https://avatars1.githubusercontent.com/u/35268825?s=60&v=4"
+            alt="Account owner small"
+            width="20px"
+            height="20px">
+            Ukhu</li>
+          <li><i class="fas fa-sign-out-alt logout"></i>Sign out</li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <div id="loading">
+    <h3 id="loading-sign" class="loading-sign">Loading...</h3>
+  </div>
+
+  <main id="main-content" aria-hidden="true">
+    <div class="main-nav">
+      <div class="container">
+        <div class="left"></div>
+        <div class="right">
+          <ul class="main-tabs" role="tablist">
+            <li id="overview" role="tab"><i class="fas fa-book-open"></i>Overview</li>
+            <li id="repositories" role="tab" class="active"><i class="fas fa-book"></i>Repositories<span id="repo-count" class="repo-count">23</span></li>
+            <li id="projects" role="tab"><i class="fas fa-chalkboard"></i>Projects</li>
+            <li id="packages" role="tab"><i class="fas fa-cube"></i>Packages</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div id="profile-details" class="left profile">
+        <!-- profile details go here -->
+      </div>
+      <div class="right" role="tabpanel" aria-labelledby="repositories">
+        <div class="right mobile-main-tabs">
+          <ul class="main-tabs">
+            <li><i class="fas fa-book-open"></i>Overview</li>
+            <li class="active"><i class="fas fa-book"></i>Repositories<span id="repo-count" class="repo-count">23</span></li>
+            <li><i class="fas fa-chalkboard"></i>Projects</li>
+            <li><i class="fas fa-cube"></i>Packages</li>
+          </ul>
+        </div>
+        <div class="search">
+          <input placeholder="Find a repository...">
+        </div>
+        <div id="repo-cards-holder">
+          <!-- repo cards go here -->
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer class="container">
+    <div class="footer">
+      <div>
+        <i class="fab fa-github"></i>
+      </div>
+      <ul>
+        <li>&#169; 2020 Osaukhu, Inc</li>
+        <li><a>Terms</a></li>
+        <li><a>Privacy</a></li>
+        <li><a>Security</a></li>
+        <li><a>Status</a></li>
+        <li><a>Help</a></li>
+        <li><a>Contact Github</a></li>
+        <li><a>Pricing</a></li>
+        <li><a>API</a></li>
+        <li><a>Training</a></li>
+        <li><a>Blog</a></li>
+        <li><a>About</a></li>
+      </ul>
+    </div>
+  </footer>
+</body>
+</html>
